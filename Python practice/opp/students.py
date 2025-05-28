@@ -35,5 +35,22 @@
 # s1.wellcome()
 # print(s1.get_marks())
 
-  
-#     
+
+
+class Students:
+    coll = "TMSS TECHNICAL INSTITUTE (TTI)"#this is class veriable
+    def __init__(self, id, name, department, marks):
+        self.id = id
+        self.name = name
+        self.department = department
+        self.marks = marks
+
+    def display(self): #This here self = car ok
+        print("\n", self.coll, "\n", self.id, self.name, "\n", self.department, "\n", self.marks)
+        
+if __name__ =="__main__":
+    car = Students(1, "Ritu", "CSE", 80)
+    car.display()
+    
+    truck = Students(2, "Faruk", "EEE", 80)
+    truck.display()
