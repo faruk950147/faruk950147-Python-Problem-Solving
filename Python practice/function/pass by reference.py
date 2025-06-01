@@ -1,3 +1,4 @@
+# no change in original list and same memory location
 def pass_by_reference(lst):
     lst[0] = lst[0] + 1 # pass by reference
     return lst

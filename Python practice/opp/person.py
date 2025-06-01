@@ -8,3 +8,6 @@ class Person:
 
 p1 = Person("Faruk", 22)
 p1.display()
+# Add a new attribute
+p1.gender = "Male"
+print(p1.gender)
