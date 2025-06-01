@@ -3,14 +3,14 @@ class Vehicle:
         self.name = name
     
     def VehicleName(self):
-        print(self.name)
+        print("I'm from vehicle method",self.name)
         
 class Driver:
     def __init__(self, name):
         self.name = name
         
     def DriverName(self):
-        print(self.name)
+        print("I'm from driver method",self.name)
         
 
 class Car(Vehicle, Driver):
@@ -18,7 +18,7 @@ class Car(Vehicle, Driver):
         super().__init__(name)
     
     def CarName(self):
-        print(self.name)
+        print("I'm from car method",self.name)
         
 
         
