@@ -1,4 +1,6 @@
 import json
+# dump is used to write json data to a file
+# loads is used to read json data from a file
 person = {
     "name": "Faruk",
     "age": 22,
