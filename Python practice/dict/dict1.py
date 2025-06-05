@@ -60,7 +60,26 @@ person = {
     "Sex": ["male", "male", "female"]
 }
 print(person)
-
+man = {
+    [
+        {
+            "Name": "Braund, Mr. Owen Harris",
+            "Age": 22,
+            "Sex": "male"
+        },
+        {
+            "Name": "Allen, Mr. William Henry",
+            "Age": 35,
+            "Sex": "male"
+        },
+        {
+            "Name": "Bonnell, Miss. Elizabeth",
+            "Age": 58,
+            "Sex": "female"
+        }
+    ]
+}
+print(man)
 # # print(person['Name'])
 # # print(person['Age'])
 # # print(person['Sex'])
