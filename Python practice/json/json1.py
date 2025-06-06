@@ -1,5 +1,5 @@
 import json
-# dump is used to write json data to a file
+# dumps is used to write json data to a file
 # loads is used to read json data from a file
 person = {
     "name": "Faruk",
@@ -14,9 +14,6 @@ person = {
 # with open('person.json', 'w') as file:
 #     json.dump(person, file)  
 
-# dump is used to write json data to a file
-# loads is used to read json data from a file
-with open('person.json', 'r') as file:
-    data = json.load(file)
+with open('data.json', 'r') as file:
+    data = json.loads(file.read())  
     print(data)
-    print(type(data))

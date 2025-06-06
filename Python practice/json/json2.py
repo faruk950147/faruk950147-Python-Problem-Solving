@@ -1,8 +1,7 @@
 import json
 
 # JSON data to string (triple quote)
-json_data = '''
-{
+data = {
     "people": [
         {
             "Name": "Faruk",
@@ -16,10 +15,13 @@ json_data = '''
         }
     ]
 }
-'''
+
+
+
+# json.dumps() Python dictionary to JSON string
+json_data = json.dumps(data, indent=4)
+
+with open('data.json', 'w') as file:
+    json.dump(data, file, indent=4)
 
 # json.loads() JSON string to Python dictionary 
-data = json.loads(json_data)
-
-# print data
-print(data)

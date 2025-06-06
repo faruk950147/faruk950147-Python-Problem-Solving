@@ -1,0 +1,14 @@
+{
+    "people": [
+        {
+            "Name": "Faruk",
+            "Age": 22,
+            "Gender": "Male"
+        },
+        {
+            "Name": "Braund, Mr. Owen Harris",
+            "Age": 22,
+            "Gender": "Male"
+        }
+    ]
+}
