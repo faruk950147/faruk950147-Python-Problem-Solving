@@ -109,7 +109,7 @@ if __name__ == "__main__":
     # change balance so it is not accessible
     # account.__balance = "Hello"
     # change balance so it is accessible
-    # account._Account__balance = "Hello"
+    account._Account__balance = "Hello"
     account.get_balance()
     
     
