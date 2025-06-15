@@ -45,12 +45,21 @@ class Students:
         self.department = department
         self.marks = marks
 
+    def get_sum_marks(self):
+        sum = 0
+        for i in self.marks:
+            sum += i
+        return sum
+    
+    def get_average_marks(self):
+        return self.get_sum_marks() / len(self.marks)
+
     def display(self): #This here self = car ok
-        print("\n", self.coll, "\n", self.id, self.name, "\n", self.department, "\n", self.marks)
+        print("\n", self.coll, "\n", self.id, self.name, "\n", self.department, "\n", self.get_sum_marks(), "\n", self.get_average_marks())
         
 if __name__ =="__main__":
-    car = Students(1, "Ritu", "CSE", 80)
-    car.display()
+    s1 = Students(1, "Ritu", "CSE", [80, 80, 80])
+    s1.display()
     
-    truck = Students(2, "Faruk", "EEE", 80)
-    truck.display()
+    s2 = Students(2, "Faruk", "SWE", [80, 80, 80])
+    s2.display()
