@@ -43,7 +43,11 @@ common = []
 
 # print(common)
 
-li = [1,2,3,4]
-li[1:3] = [8,9]
-print(li)
-print(2**3**2)
+# li = [1,2,3,4]
+# li[1:3] = [8,9]
+# print(li)
+# print(2**3**2)
+li2 = [1,2,3]
+print(li2[3:])
+print(li2[:3])
+print(li2[:])
