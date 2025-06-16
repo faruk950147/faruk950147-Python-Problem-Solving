@@ -36,14 +36,14 @@ common = []
 
 # # increasing order 
 # common.sort()
-for i in list1:
-    if i in list2:
-        if i not in common:
-            common.append(i)
+# for i in list1:
+#     if i in list2:
+#         if i not in common:
+#             common.append(i)
 
-print(common)
+# print(common)
 
-# li = [1,2,3,4]
-# li[1:3] = [8,9]
-# print(li)
+li = [1,2,3,4]
+li[1:3] = [8,9]
+print(li)
 print(2**3**2)
