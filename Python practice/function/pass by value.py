@@ -3,11 +3,11 @@
 # মূল ভ্যারিয়েবল এর উপর কোনো প্রভাব পড়ে না।
 
 def pass_by_value(x):
+    print("before memory location:", x, id(x))
     # x = x + 1 # pass by value
     x += 1 # pass by value   
-    print("before memory location:", id(x))
     print("Inside function:", x)
-    print("after memory location:", id(x))
+    print("after memory location:", x, id(x))
     return x    
 
 
