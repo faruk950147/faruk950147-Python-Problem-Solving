@@ -28,11 +28,15 @@
 
 
 def change_list(lst):
+    print("before memory location:", lst, id(lst))
     lst.append(100)
     print("Inside function:", lst, id(lst))
+    print("after memory location:", lst, id(lst))
     return lst
 
-my_list = [1, 2, 3]
-print("Before modification:", my_list, id(my_list))
-change_list(my_list)
-print("After modification:", my_list, id(my_list))  # Output: [1, 2, 3, 100]
+list1 = [1, 2, 3]
+print("Before modification:", list1, id(list1))
+change_list(list1)
+print("After modification:", list1, id(list1))  # Output: [1, 2, 3, 100]
+
+
