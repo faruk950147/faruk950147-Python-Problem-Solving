@@ -24,7 +24,7 @@ class SmartPhone(Phone):
         print(f"{self.name} is bought with battery {self.battery}")
     
     def sell(self):
-        print(f"{self.name} is sold")
+        print(f"{self.name} is sold with battery {self.battery}")
 
 s1 = SmartPhone("iPhone", "Apple", 100000, "12 MP", "10000 mAh")
 s1.buy()    
