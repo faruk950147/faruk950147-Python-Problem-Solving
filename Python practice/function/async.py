@@ -5,3 +5,11 @@ async def Hello_World(word):
     print(word)
 
 asyncio.run(Hello_World("Hello World"))
+
+async def main():
+    await asyncio.gather(
+        Hello_World("Hello World"),
+        Hello_World("Hello World"),
+    )
+
+asyncio.run(main())
