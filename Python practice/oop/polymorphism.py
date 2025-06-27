@@ -1,36 +1,70 @@
 
-class Animal:
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+    
+#     def sound(self):
+#         print("Animal makes a sound")
+
+# class Dog(Animal):
+#     def sound(self):
+#         print(f"{self.name} says Woof!")
+
+# class Cat(Animal):
+#     def sound(self):
+#         print(f"{self.name} says Meow!")
+
+# class Cow(Animal):
+#     def sound(self):
+#         print(f"{self.name} says Moo!")
+
+# def animal_sound(animal):
+#     animal.sound()
+
+# if __name__ == "__main__":
+#     dog = Dog("Tommy")
+#     cat = Cat("Kitty")
+#     cow = Cow("Bessie")
+
+#     animals = [dog, cat, cow]
+
+#     for animal in animals:
+#         animal_sound(animal)
+
+class animal:
     def __init__(self, name):
         self.name = name
     
     def sound(self):
         print("Animal makes a sound")
-
-class Dog(Animal):
+class Hen(animal):
     def sound(self):
-        print(f"{self.name} says Woof!")
-
-class Cat(Animal):
+        print(f"{self.name} says Cluck!")
+class Duck(animal):
     def sound(self):
-        print(f"{self.name} says Meow!")
-
-class Cow(Animal):
+        print(f"{self.name} says Quack!")
+class Cow(animal):
     def sound(self):
         print(f"{self.name} says Moo!")
+
+#define a function that takes an animal object and calls its sound method
+# if you want manualy call the sound method so remove this function
 
 def animal_sound(animal):
     animal.sound()
 
 if __name__ == "__main__":
-    dog = Dog("Tommy")
-    cat = Cat("Kitty")
-    cow = Cow("Bessie")
+    hen = Hen("Hen")
+    duck = Duck("Duck")
+    cow = Cow("Cow")
+    # hen.sound()
+    # duck.sound()
+    # cow.sound()
 
-    animals = [dog, cat, cow]
+    animals = [hen, duck, cow]
 
     for animal in animals:
         animal_sound(animal)
-
 
 # class Shape:
 #     def __init__(self, name):
