@@ -12,7 +12,8 @@ products = [
 
 with open('data.json', 'w') as file:    # json.dump() Python dictionary to JSON string
     json.dump(products, file, indent=4)
+    print("Data written to file successfully")
 
-# with open('data.json', 'r') as file:    # json.load() JSON string to Python dictionary 
-#     data = json.load(file)
-#     print(data)
+with open('data.json', 'r') as file:    # json.load() JSON string to Python dictionary 
+    data = json.load(file)
+    print(f"Data read from file successfully: {data}")
