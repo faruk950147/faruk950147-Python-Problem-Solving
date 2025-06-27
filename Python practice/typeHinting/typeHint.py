@@ -29,16 +29,16 @@
 #     user = User()
 #     print(user)
 
-# class User:
-#     def __init__(self, name: str, age: int, email: str):
-#         self.name = name
-#         self.age = age
-#         self.email = email
+class User:
+    def __init__(self, name: str, age: int, email: str):
+        self.name = name
+        self.age = age
+        self.email = email
 
-#     def __str__(self) -> str:
-#         return f"User(name={self.name}, age={self.age}, email={self.email})"
+    def __str__(self) -> str:
+        return f"User(name={self.name}, age={self.age}, email={self.email})"
 
-# if __name__ == "__main__":
-#     user = User("John", 30, "john@example.com")
-#     print(user)
+if __name__ == "__main__":
+    user = User("John", 30, "john@example.com")
+    print(user)
 
