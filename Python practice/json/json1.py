@@ -11,9 +11,9 @@ person = {
 # print(type(data))
 
 # parse json from file
-# with open('person.json', 'w') as file: # json.dumps() Python dictionary to JSON string
-#     json.dump(person, file)  
+with open('L:/Python/Python Problem Solving/Python practice/json/file/person.json', 'w') as file:# json.dump() Python dictionary to JSON string
+    json.dump(person, file)
 
-with open('data.json', 'r') as file:# json.loads() JSON string to Python dictionary 
+with open('L:/Python/Python Problem Solving/Python practice/json/file/person.json', 'r') as file:# json.loads() JSON string to Python dictionary 
     data = json.loads(file.read())  
     print(data)
