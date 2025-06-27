@@ -3,14 +3,14 @@ import uvicorn
 app = FastAPI()
 
 @app.get("/")
-def Home():
+async def Home():
     return {
         "Status": 200,
         "Message": "Hello World"
     }
 
 # @app.get("/items/{item_id}")
-# def read_item(item_id: int, q: str = None):
+# async def read_item(item_id: int, q: str = None):
 #     return {"item_id": item_id, "q": q}
 
 if __name__ == "__main__":

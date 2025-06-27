@@ -4,7 +4,7 @@ import uvicorn
 app = FastAPI()
 
 @app.get("/")
-def Home():
+async def Home():
     return JSONResponse(content={
         "Status": 200,
         "Message": "Hello World"
