@@ -2,16 +2,28 @@ from fastapi import FastAPI
 import uvicorn
 app = FastAPI()
 
-@app.get("/")
-async def Home():
-    return {
-        "Status": 200,
-        "Message": "Hello World"
-    }
+# @app.get("/")
+# async def Home():
+#     return {
+#         "id": 1,
+#         "status": 200,
+#         "title": "Ipad M-10",
+#         "price": 100000,
+#         "description": "Ipad M-10 is a great product"
+#     }
 
-# @app.get("/items/{item_id}")
-# async def read_item(item_id: int, q: str = None):
-#     return {"item_id": item_id, "q": q}
+# @app.get("/")
+# async def Home():
+#     return {
+#         "data": {
+#             "id": 1,
+#             "status": 200,
+#             "title": "Ipad M-10",
+#             "price": 100000,
+#             "description": "Ipad M-10 is a great product"
+#         }
+#     }
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
