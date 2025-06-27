@@ -6,8 +6,8 @@ app = FastAPI()
 @app.get("/")
 async def Home():
     return JSONResponse(content={
-        "Status": 200,
-        "Message": "Hello World"
+        "status": "success",
+        "data": "Hello World"
     }, status_code=status.HTTP_200_OK)
 
 if __name__ == "__main__":
