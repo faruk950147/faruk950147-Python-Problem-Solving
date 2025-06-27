@@ -15,7 +15,7 @@ app = FastAPI()
 # @app.get("/")
 # async def Home():
 #     return {
-#         "data": {
+#         "product": {
 #             "id": 1,
 #             "status": 200,
 #             "title": "Ipad M-10",
