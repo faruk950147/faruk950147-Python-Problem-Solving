@@ -1,14 +1,9 @@
 {
-    "people": [
-        {
-            "Name": "Faruk",
-            "Age": 22,
-            "Gender": "Male"
-        },
-        {
-            "Name": "Braund, Mr. Owen Harris",
-            "Age": 22,
-            "Gender": "Male"
-        }
-    ]
+    "product": {
+        "id": 1,
+        "status": 200,
+        "title": "Ipad M-10",
+        "price": 100000,
+        "description": "Ipad M-10 is a great product"
+    }
 }

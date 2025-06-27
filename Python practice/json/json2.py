@@ -1,16 +1,27 @@
-import json 
+import json
 
-product = {
-    "product": [
+# JSON data to string (triple quote)
+data = {
+    "people": [
         {
-            "id": 1,
-            "status": 200,
-            "title": "Ipad M-10",
-            "price": 100000,
-            "description": "Ipad M-10 is a great product"
+            "Name": "Faruk",
+            "Age": 22,
+            "Gender": "Male"
+        },
+        {
+            "Name": "Braund, Mr. Owen Harris",
+            "Age": 22,
+            "Gender": "Male"
         }
     ]
 }
 
+
+
+# json.dumps() Python dictionary to JSON string
+json_data = json.dumps(data, indent=4)
+
 with open('data.json', 'w') as file:
-    json.dump(product, file, indent=4)
+    json.dump(data, file, indent=4)
+
+# json.loads() JSON string to Python dictionary 
