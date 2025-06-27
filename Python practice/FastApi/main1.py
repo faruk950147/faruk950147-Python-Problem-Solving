@@ -1,0 +1,14 @@
+from fastapi import FastAPI, status
+from fastapi.responses import JSONResponse
+import uvicorn
+app = FastAPI()
+
+@app.get("/")
+def Home():
+    return JSONResponse(content={
+        "Status": 200,
+        "Message": "Hello World"
+    }, status_code=status.HTTP_200_OK)
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
