@@ -55,8 +55,8 @@ async def Home():
     }, status_code=status.HTTP_200_OK)
   
 
-@app.get("/product/{id}")
-async def product(id: int):
+@app.get("/product/{id}") # this is called path parameter
+async def product(id: int): # this is called path parameter and type hinting is int
     return JSONResponse(content={
         "product": {
             "id": id,

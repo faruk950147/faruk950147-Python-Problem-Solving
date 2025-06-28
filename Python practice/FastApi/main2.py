@@ -35,8 +35,8 @@ async def users():
         ]
     }
 
-@app.get("/user_profile/{id}")
-async def profile(id: int):
+@app.get("/user_profile/{id}") # this is called path parameter
+async def profile(id: int): # this is called path parameter and type hinting is int
     users = [
         {"id": 1, "name": "John Doe", "email": "john.doe@example.com", "user_type": UserType.ADMIN.value},
         {"id": 2, "name": "Butler", "email": "butler@example.com", "user_type": UserType.USER.value},
