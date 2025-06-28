@@ -107,3 +107,19 @@ print(i)
         # ex: None          
 j = None
 print(j)
+
+
+# check data type  isinstance()
+
+# print(isinstance(a, int))
+# print(isinstance(b, float))
+# print(isinstance(c, complex))
+# print(isinstance(d, str))
+# print(isinstance(e, list))
+# print(isinstance(f, tuple))
+# print(isinstance(g, dict))
+# print(isinstance(h, set))
+# print(isinstance(i, frozenset))
+# print(isinstance(j, bool))
+# print(isinstance(j, NoneType))
+
