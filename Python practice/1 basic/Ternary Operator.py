@@ -16,6 +16,6 @@
 # walrus operator is used to assign value to variable as a part of a larger expression
 # it is used in while loop
 
-# a = 10
-# while (a := a - 1) > 0:
-#     print(a)
+a = 10
+while (a := a - 1) > 0:
+    print(a)
