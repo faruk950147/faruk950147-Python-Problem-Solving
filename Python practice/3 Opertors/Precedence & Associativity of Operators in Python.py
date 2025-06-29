@@ -20,7 +20,25 @@
 # 4. Addition +, Subtraction - # fourth priority but priority level is same
 
 
-a = 2 + 3 * 5
-print(a)
-a = (2 + 3) * 5
-print(a)
+# a = 2 + 3 * 5
+# print(a)
+# a = (2 + 3) * 5
+# print(a)
+
+# associativity priority level is same 
+# left to right 2 + 3 + 4 + 5
+
+# b = 2 + 3 + 4 - 5
+# print(b)
+
+# # associativity priority level is same 
+# # right to left 2 + 3 + 4 - 5
+
+# b = 2 + 3 + 4 - 5
+# print(b)
+
+# c = 2 * 3 // 5
+# print(c)
+
+d = 2 * 3 + 5
+print(d)
