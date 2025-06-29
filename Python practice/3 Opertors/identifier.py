@@ -18,5 +18,5 @@
 
 x = 10
 y = 10
-print(x is y)
-print(x is not y)
+print(x is y) # id(a) == id(b) True because both variables point to the same object in memory same value a and b
+print(x is not y) # id(a) != id(b) False because both variables point to the same object in memory same value a and b
