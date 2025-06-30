@@ -12,18 +12,43 @@ class UserType(str, Enum):
 @app.get("/userValidation/")
 async def userValidation(user_type: UserType):
     # FastAPI self validation but you want to validate
+    # return {
+    #     "status": "200",
+    #     "user_type": user_type.value
+    # }
     # first check user_type is in UserType
     #if user_type == UserType.ADMIN or user_type == UserType.USER or user_type == UserType.GUEST:
     
-    if user_type not in UserType:
+    # if user_type not in UserType:
+    #     return {
+    #         "status": "400",
+    #         "user_type": "Invalid user type"
+    #     }
+    # return {
+    #     "status": "200",
+    #     "user_type": user_type.value
+    # }
+    
+    if user_type == UserType.ADMIN:
         return {
-            "status": "400",
-            "user_type": "Invalid user type"
+            "status": "200",
+            "user_type": user_type.value
+        }
+    if user_type == UserType.USER:
+        return {
+            "status": "200",
+            "user_type": user_type.value
+        }
+    if user_type == UserType.GUEST:
+        return {
+            "status": "200",
+            "user_type": user_type.value
         }
     return {
-        "status": "200",
-        "user_type": user_type.value
+        "status": "400",
+        "user_type": "Invalid user type"
     }
+    
 
 @app.get("/users")
 async def users():
